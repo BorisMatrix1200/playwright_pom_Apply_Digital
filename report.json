@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "D:\\Proyectos_Base\\PlayWright\\playwright-pom-login\\playwright.config.ts",
-    "rootDir": "D:/Proyectos_Base/PlayWright/playwright-pom-login/tests",
+    "configFile": "C:\\Users\\velez\\Desktop\\Prueba_Tecnica_Apply\\playwright-pom-login\\playwright.config.ts",
+    "rootDir": "C:/Users/velez/Desktop/Prueba_Tecnica_Apply/playwright-pom-login/tests",
     "forbidOnly": false,
     "fullyParallel": true,
     "globalSetup": null,
@@ -26,7 +26,7 @@
         }
       ],
       [
-        "D:\\Proyectos_Base\\PlayWright\\playwright-pom-login\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        "C:\\Users\\velez\\Desktop\\Prueba_Tecnica_Apply\\playwright-pom-login\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
         null
       ]
     ],
@@ -37,7 +37,7 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "D:/Proyectos_Base/PlayWright/playwright-pom-login/test-results",
+        "outputDir": "C:/Users/velez/Desktop/Prueba_Tecnica_Apply/playwright-pom-login/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
@@ -45,7 +45,7 @@
         },
         "id": "chromium",
         "name": "chromium",
-        "testDir": "D:/Proyectos_Base/PlayWright/playwright-pom-login/tests",
+        "testDir": "C:/Users/velez/Desktop/Prueba_Tecnica_Apply/playwright-pom-login/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -55,28 +55,28 @@
     ],
     "shard": null,
     "updateSnapshots": "missing",
-    "updateSourceMethod": "patch",
-    "version": "1.54.2",
+    "updateSourceMethod": "3way",
+    "version": "1.55.0",
     "workers": 6,
     "webServer": null
   },
   "suites": [
     {
-      "title": "login.spec.ts",
-      "file": "login.spec.ts",
+      "title": "purchaseFlow.spec.ts",
+      "file": "purchaseFlow.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Login Suite",
-          "file": "login.spec.ts",
-          "line": 6,
+          "title": "Purchase Flow",
+          "file": "purchaseFlow.spec.ts",
+          "line": 10,
           "column": 6,
           "specs": [
             {
-              "title": "Login exitoso con usuario válido",
-              "ok": true,
+              "title": "Purchase Flow Complete",
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -87,47 +87,76 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
+                      "workerIndex": 16,
                       "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 3826,
-                      "errors": [],
+                      "status": "failed",
+                      "duration": 1159,
+                      "error": {
+                        "message": "Error: page.goto: net::ERR_NAME_NOT_RESOLVED at https://automationexercise.comm/\nCall log:\n\u001b[2m  - navigating to \"https://automationexercise.comm/\", waiting until \"load\"\u001b[22m\n",
+                        "stack": "Error: page.goto: net::ERR_NAME_NOT_RESOLVED at https://automationexercise.comm/\nCall log:\n\u001b[2m  - navigating to \"https://automationexercise.comm/\", waiting until \"load\"\u001b[22m\n\n    at NavigateTo.navigateToURL (C:\\Users\\velez\\Desktop\\Prueba_Tecnica_Apply\\playwright-pom-login\\pages\\NavigateTo.ts:14:21)\n    at C:\\Users\\velez\\Desktop\\Prueba_Tecnica_Apply\\playwright-pom-login\\tests\\purchaseFlow.spec.ts:21:24\n    at C:\\Users\\velez\\Desktop\\Prueba_Tecnica_Apply\\playwright-pom-login\\tests\\purchaseFlow.spec.ts:20:16",
+                        "location": {
+                          "file": "C:\\Users\\velez\\Desktop\\Prueba_Tecnica_Apply\\playwright-pom-login\\pages\\NavigateTo.ts",
+                          "column": 21,
+                          "line": 14
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\NavigateTo.ts:14\n\n\u001b[0m \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m     \u001b[90m//Ambiente al que se desea navegar QA, DEV o PROD\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m'https://automationexercise.comm/'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 15 |\u001b[39m   }\n \u001b[90m 16 |\u001b[39m\n \u001b[90m 17 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\velez\\Desktop\\Prueba_Tecnica_Apply\\playwright-pom-login\\pages\\NavigateTo.ts",
+                            "column": 21,
+                            "line": 14
+                          },
+                          "message": "Error: page.goto: net::ERR_NAME_NOT_RESOLVED at https://automationexercise.comm/\nCall log:\n\u001b[2m  - navigating to \"https://automationexercise.comm/\", waiting until \"load\"\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\NavigateTo.ts:14\n\n\u001b[0m \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m     \u001b[90m//Ambiente al que se desea navegar QA, DEV o PROD\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m'https://automationexercise.comm/'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 15 |\u001b[39m   }\n \u001b[90m 16 |\u001b[39m\n \u001b[90m 17 |\u001b[39m\u001b[0m\n\u001b[2m    at NavigateTo.navigateToURL (C:\\Users\\velez\\Desktop\\Prueba_Tecnica_Apply\\playwright-pom-login\\pages\\NavigateTo.ts:14:21)\u001b[22m\n\u001b[2m    at C:\\Users\\velez\\Desktop\\Prueba_Tecnica_Apply\\playwright-pom-login\\tests\\purchaseFlow.spec.ts:21:24\u001b[22m\n\u001b[2m    at C:\\Users\\velez\\Desktop\\Prueba_Tecnica_Apply\\playwright-pom-login\\tests\\purchaseFlow.spec.ts:20:16\u001b[22m"
+                        }
+                      ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
                       "steps": [
                         {
-                          "title": "Navegar a la página de login",
-                          "duration": 2026
-                        },
-                        {
-                          "title": "Ingresar usuario",
-                          "duration": 274
-                        },
-                        {
-                          "title": "Ingresar contraseña",
-                          "duration": 263
-                        },
-                        {
-                          "title": "Enviar formulario de login",
-                          "duration": 632
-                        },
-                        {
-                          "title": "Validar que el login fue exitoso",
-                          "duration": 155
+                          "title": "Add product",
+                          "duration": 457,
+                          "error": {
+                            "message": "Error: page.goto: net::ERR_NAME_NOT_RESOLVED at https://automationexercise.comm/\nCall log:\n\u001b[2m  - navigating to \"https://automationexercise.comm/\", waiting until \"load\"\u001b[22m\n",
+                            "stack": "Error: page.goto: net::ERR_NAME_NOT_RESOLVED at https://automationexercise.comm/\nCall log:\n\u001b[2m  - navigating to \"https://automationexercise.comm/\", waiting until \"load\"\u001b[22m\n\n    at NavigateTo.navigateToURL (C:\\Users\\velez\\Desktop\\Prueba_Tecnica_Apply\\playwright-pom-login\\pages\\NavigateTo.ts:14:21)\n    at C:\\Users\\velez\\Desktop\\Prueba_Tecnica_Apply\\playwright-pom-login\\tests\\purchaseFlow.spec.ts:21:24\n    at C:\\Users\\velez\\Desktop\\Prueba_Tecnica_Apply\\playwright-pom-login\\tests\\purchaseFlow.spec.ts:20:16",
+                            "location": {
+                              "file": "C:\\Users\\velez\\Desktop\\Prueba_Tecnica_Apply\\playwright-pom-login\\pages\\NavigateTo.ts",
+                              "column": 21,
+                              "line": 14
+                            },
+                            "snippet": "\u001b[90m   at \u001b[39m..\\pages\\NavigateTo.ts:14\n\n\u001b[0m \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m     \u001b[90m//Ambiente al que se desea navegar QA, DEV o PROD\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m'https://automationexercise.comm/'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 15 |\u001b[39m   }\n \u001b[90m 16 |\u001b[39m\n \u001b[90m 17 |\u001b[39m\u001b[0m"
+                          }
                         }
                       ],
-                      "startTime": "2025-08-05T14:42:37.736Z",
+                      "startTime": "2025-08-20T19:33:18.548Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\velez\\Desktop\\Prueba_Tecnica_Apply\\playwright-pom-login\\test-results\\purchaseFlow-Purchase-Flow-Purchase-Flow-Complete-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\velez\\Desktop\\Prueba_Tecnica_Apply\\playwright-pom-login\\test-results\\purchaseFlow-Purchase-Flow-Purchase-Flow-Complete-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\velez\\Desktop\\Prueba_Tecnica_Apply\\playwright-pom-login\\pages\\NavigateTo.ts",
+                        "column": 21,
+                        "line": 14
+                      }
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
-              "id": "41d3fd2474a19feb00a1-98fb96cafd4c3e8f38fb",
-              "file": "login.spec.ts",
-              "line": 8,
+              "id": "82eb671d748662485c89-0fb075fa69eaac3cf98e",
+              "file": "purchaseFlow.spec.ts",
+              "line": 12,
               "column": 7
             }
           ]
@@ -137,11 +166,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-08-05T14:42:35.939Z",
-    "duration": 6167.971,
-    "expected": 1,
+    "startTime": "2025-08-20T19:33:15.385Z",
+    "duration": 4947.408999999985,
+    "expected": 0,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }
