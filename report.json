@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "C:\\Users\\velez\\Desktop\\Prueba_Tecnica_Apply\\playwright-pom-login\\playwright.config.ts",
-    "rootDir": "C:/Users/velez/Desktop/Prueba_Tecnica_Apply/playwright-pom-login/tests",
+    "configFile": "C:\\Users\\velez\\Desktop\\Prueba_Tecnica_Apply\\playwright_pom_Apply_Digital\\playwright.config.ts",
+    "rootDir": "C:/Users/velez/Desktop/Prueba_Tecnica_Apply/playwright_pom_Apply_Digital/tests",
     "forbidOnly": false,
     "fullyParallel": true,
     "globalSetup": null,
@@ -26,7 +26,7 @@
         }
       ],
       [
-        "C:\\Users\\velez\\Desktop\\Prueba_Tecnica_Apply\\playwright-pom-login\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        "C:\\Users\\velez\\Desktop\\Prueba_Tecnica_Apply\\playwright_pom_Apply_Digital\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
         null
       ]
     ],
@@ -37,7 +37,7 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "C:/Users/velez/Desktop/Prueba_Tecnica_Apply/playwright-pom-login/test-results",
+        "outputDir": "C:/Users/velez/Desktop/Prueba_Tecnica_Apply/playwright_pom_Apply_Digital/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
@@ -45,7 +45,7 @@
         },
         "id": "chromium",
         "name": "chromium",
-        "testDir": "C:/Users/velez/Desktop/Prueba_Tecnica_Apply/playwright-pom-login/tests",
+        "testDir": "C:/Users/velez/Desktop/Prueba_Tecnica_Apply/playwright_pom_Apply_Digital/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -76,7 +76,7 @@
           "specs": [
             {
               "title": "Purchase Flow Complete",
-              "ok": false,
+              "ok": true,
               "tags": [],
               "tests": [
                 {
@@ -87,71 +87,46 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 16,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
-                      "status": "failed",
-                      "duration": 1159,
-                      "error": {
-                        "message": "Error: page.goto: net::ERR_NAME_NOT_RESOLVED at https://automationexercise.comm/\nCall log:\n\u001b[2m  - navigating to \"https://automationexercise.comm/\", waiting until \"load\"\u001b[22m\n",
-                        "stack": "Error: page.goto: net::ERR_NAME_NOT_RESOLVED at https://automationexercise.comm/\nCall log:\n\u001b[2m  - navigating to \"https://automationexercise.comm/\", waiting until \"load\"\u001b[22m\n\n    at NavigateTo.navigateToURL (C:\\Users\\velez\\Desktop\\Prueba_Tecnica_Apply\\playwright-pom-login\\pages\\NavigateTo.ts:14:21)\n    at C:\\Users\\velez\\Desktop\\Prueba_Tecnica_Apply\\playwright-pom-login\\tests\\purchaseFlow.spec.ts:21:24\n    at C:\\Users\\velez\\Desktop\\Prueba_Tecnica_Apply\\playwright-pom-login\\tests\\purchaseFlow.spec.ts:20:16",
-                        "location": {
-                          "file": "C:\\Users\\velez\\Desktop\\Prueba_Tecnica_Apply\\playwright-pom-login\\pages\\NavigateTo.ts",
-                          "column": 21,
-                          "line": 14
-                        },
-                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\NavigateTo.ts:14\n\n\u001b[0m \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m     \u001b[90m//Ambiente al que se desea navegar QA, DEV o PROD\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m'https://automationexercise.comm/'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 15 |\u001b[39m   }\n \u001b[90m 16 |\u001b[39m\n \u001b[90m 17 |\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "C:\\Users\\velez\\Desktop\\Prueba_Tecnica_Apply\\playwright-pom-login\\pages\\NavigateTo.ts",
-                            "column": 21,
-                            "line": 14
-                          },
-                          "message": "Error: page.goto: net::ERR_NAME_NOT_RESOLVED at https://automationexercise.comm/\nCall log:\n\u001b[2m  - navigating to \"https://automationexercise.comm/\", waiting until \"load\"\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\NavigateTo.ts:14\n\n\u001b[0m \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m     \u001b[90m//Ambiente al que se desea navegar QA, DEV o PROD\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m'https://automationexercise.comm/'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 15 |\u001b[39m   }\n \u001b[90m 16 |\u001b[39m\n \u001b[90m 17 |\u001b[39m\u001b[0m\n\u001b[2m    at NavigateTo.navigateToURL (C:\\Users\\velez\\Desktop\\Prueba_Tecnica_Apply\\playwright-pom-login\\pages\\NavigateTo.ts:14:21)\u001b[22m\n\u001b[2m    at C:\\Users\\velez\\Desktop\\Prueba_Tecnica_Apply\\playwright-pom-login\\tests\\purchaseFlow.spec.ts:21:24\u001b[22m\n\u001b[2m    at C:\\Users\\velez\\Desktop\\Prueba_Tecnica_Apply\\playwright-pom-login\\tests\\purchaseFlow.spec.ts:20:16\u001b[22m"
-                        }
-                      ],
+                      "status": "passed",
+                      "duration": 20601,
+                      "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
                       "steps": [
                         {
                           "title": "Add product",
-                          "duration": 457,
-                          "error": {
-                            "message": "Error: page.goto: net::ERR_NAME_NOT_RESOLVED at https://automationexercise.comm/\nCall log:\n\u001b[2m  - navigating to \"https://automationexercise.comm/\", waiting until \"load\"\u001b[22m\n",
-                            "stack": "Error: page.goto: net::ERR_NAME_NOT_RESOLVED at https://automationexercise.comm/\nCall log:\n\u001b[2m  - navigating to \"https://automationexercise.comm/\", waiting until \"load\"\u001b[22m\n\n    at NavigateTo.navigateToURL (C:\\Users\\velez\\Desktop\\Prueba_Tecnica_Apply\\playwright-pom-login\\pages\\NavigateTo.ts:14:21)\n    at C:\\Users\\velez\\Desktop\\Prueba_Tecnica_Apply\\playwright-pom-login\\tests\\purchaseFlow.spec.ts:21:24\n    at C:\\Users\\velez\\Desktop\\Prueba_Tecnica_Apply\\playwright-pom-login\\tests\\purchaseFlow.spec.ts:20:16",
-                            "location": {
-                              "file": "C:\\Users\\velez\\Desktop\\Prueba_Tecnica_Apply\\playwright-pom-login\\pages\\NavigateTo.ts",
-                              "column": 21,
-                              "line": 14
-                            },
-                            "snippet": "\u001b[90m   at \u001b[39m..\\pages\\NavigateTo.ts:14\n\n\u001b[0m \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m     \u001b[90m//Ambiente al que se desea navegar QA, DEV o PROD\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m'https://automationexercise.comm/'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 15 |\u001b[39m   }\n \u001b[90m 16 |\u001b[39m\n \u001b[90m 17 |\u001b[39m\u001b[0m"
-                          }
-                        }
-                      ],
-                      "startTime": "2025-08-20T19:33:18.548Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\velez\\Desktop\\Prueba_Tecnica_Apply\\playwright-pom-login\\test-results\\purchaseFlow-Purchase-Flow-Purchase-Flow-Complete-chromium\\test-failed-1.png"
+                          "duration": 11711
                         },
                         {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "C:\\Users\\velez\\Desktop\\Prueba_Tecnica_Apply\\playwright-pom-login\\test-results\\purchaseFlow-Purchase-Flow-Purchase-Flow-Complete-chromium\\error-context.md"
+                          "title": "Register user",
+                          "duration": 780
+                        },
+                        {
+                          "title": "Complete form",
+                          "duration": 1784
+                        },
+                        {
+                          "title": "Confirm purchase",
+                          "duration": 3896
+                        },
+                        {
+                          "title": "Confirm purchase",
+                          "duration": 1598
+                        },
+                        {
+                          "title": "Validar que el carrito tenga productos",
+                          "duration": 131
                         }
                       ],
-                      "errorLocation": {
-                        "file": "C:\\Users\\velez\\Desktop\\Prueba_Tecnica_Apply\\playwright-pom-login\\pages\\NavigateTo.ts",
-                        "column": 21,
-                        "line": 14
-                      }
+                      "startTime": "2025-08-20T20:30:46.533Z",
+                      "annotations": [],
+                      "attachments": []
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
               "id": "82eb671d748662485c89-0fb075fa69eaac3cf98e",
@@ -166,11 +141,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-08-20T19:33:15.385Z",
-    "duration": 4947.408999999985,
-    "expected": 0,
+    "startTime": "2025-08-20T20:30:44.509Z",
+    "duration": 23924.434999999998,
+    "expected": 1,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }
